@@ -89,7 +89,7 @@ const ResultatAdCopy = () => {
     {edit && <h1 className='text-[25px] font-satoshi font-bold'>Editing</h1>}
     {edit && 
       <div className='m-8 max-w-full max-h-[200px] overflow-y-auto summary_box flex-1 relative'>
-        <button class="text-gray-900 absolute top-0 left-0 m-2 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" onClick={(e) => handleEditingSave(e)}>Save</button>
+        <button className="text-gray-900 absolute top-0 left-0 m-2 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700" onClick={(e) => handleEditingSave(e)}>Save</button>
         <textarea className='max-w-full bg-transparent focus:outline-none my-10' cols="70" rows="8" value={myAd} placeholder='For Editing' onChange={(e) => setmyAd(e.target.value)}></textarea>
       </div>}
     </div>

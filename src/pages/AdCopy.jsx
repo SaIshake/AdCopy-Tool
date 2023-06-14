@@ -14,7 +14,9 @@ const AdCopy = () => {
 
       <div className='flex flex-col sm:flex-row items-start'>
         <div className="flex-1 app">
-          <Hero />
+          <Hero desc="The ad copy tool simplifies ad creation with advanced algorithms,
+       generating engaging copy tailored to marketing objectives.
+        It's user-friendly, saves time, and delivers persuasive ads for effective audience engagement." firstTitle="Ad Copy Tool with" secondTitle="GPT-4" />
           <DemoAdCopy />
         </div>
         <ResultatAdCopy />
