@@ -12,16 +12,17 @@ import {
 import storage from "redux-persist/lib/storage";
 import adsReducer from "./ads";
 import adReducer from "./ad";
+import userReducer from "./user";
 
 
 const persistConfig = {
   key: "root",
   version: 1,
   storage,
-  whitelist: ['ads'], // Only persist the 'user' reducer
+  whitelist: ['ads', 'user'], // Only persist the 'user' reducer
 
 };
-const rootReducer = combineReducers({ads: adsReducer, ad: adReducer });
+const rootReducer = combineReducers({ads: adsReducer, ad: adReducer, user: userReducer });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
